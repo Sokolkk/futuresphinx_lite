@@ -20,6 +20,7 @@
     };
   </script>
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./effects.css" />
   <link rel="stylesheet" href="./lead-form.css" />
 </head>
 <body class="bg-[#04070f] text-slate-100 antialiased">
@@ -28,7 +29,7 @@
     <div class="absolute inset-0 bg-[linear-gradient(160deg,rgba(1,7,22,0.72),rgba(3,4,10,0.85))]"></div>
     <div class="absolute -top-[20vh] -left-[10vw] w-[60vw] aspect-square rounded-full bg-[radial-gradient(circle,rgba(0,209,255,0.12),transparent_70%)] blur-[90px]"></div>
     <div class="absolute -bottom-[25vh] -right-[10vw] w-[55vw] aspect-square rounded-full bg-[radial-gradient(circle,rgba(111,71,255,0.10),transparent_70%)] blur-[90px]"></div>
-    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] opacity-50"></div>
+    <div class="cyber-grid"></div>
   </div>
 
   <main class="mx-auto max-w-[960px] px-4 py-6 md:px-6 md:py-10">
@@ -52,7 +53,7 @@
         Решаю технические задачи бизнеса: парсеры, боты, быстрые лендинги. Фиксированная цена и&nbsp;сроки&nbsp;&mdash; без сюрпризов.
       </p>
       <button type="button"
-         class="js-open-form cta-main inline-flex items-center gap-2.5 mt-6 rounded-full bg-electric px-7 py-3.5 text-sm font-bold text-[#04070f] active:scale-[0.97] transition-transform touch-manipulation hover:brightness-110">
+         class="js-open-form cta-main ripple inline-flex items-center gap-2.5 mt-6 rounded-full bg-electric px-7 py-3.5 text-sm font-bold text-[#04070f] active:scale-[0.97] transition-transform touch-manipulation hover:brightness-110">
         <svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M5 12h14M13 6l6 6-6 6"/>
         </svg>
@@ -164,7 +165,7 @@
         </p>
         <div class="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <button type="button"
-             class="js-open-form cta-main inline-flex items-center gap-2.5 rounded-full bg-electric px-7 py-3.5 text-sm font-bold text-[#04070f] active:scale-[0.97] transition-transform touch-manipulation hover:brightness-110">
+             class="js-open-form cta-main ripple inline-flex items-center gap-2.5 rounded-full bg-electric px-7 py-3.5 text-sm font-bold text-[#04070f] active:scale-[0.97] transition-transform touch-manipulation hover:brightness-110">
             <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M5 12h14M13 6l6 6-6 6"/>
             </svg>
@@ -258,5 +259,6 @@
 
   <script src="./script.js"></script>
   <script src="./lead-form.js"></script>
+  <script src="./particles.js"></script>
 </body>
 </html>

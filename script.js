@@ -28,3 +28,23 @@
     });
   });
 })();
+
+/* ── ripple effect on .ripple buttons ── */
+(function () {
+  var ripples = document.querySelectorAll('.ripple');
+  if (!ripples.length) return;
+
+  ripples.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      var rect = btn.getBoundingClientRect();
+      var span = document.createElement('span');
+      span.className = 'ripple__span';
+      var size = Math.max(rect.width, rect.height);
+      span.style.width = span.style.height = size + 'px';
+      span.style.left = (e.clientX - rect.left - size / 2) + 'px';
+      span.style.top = (e.clientY - rect.top - size / 2) + 'px';
+      btn.appendChild(span);
+      span.addEventListener('animationend', function () { span.remove(); });
+    });
+  });
+})();
